@@ -167,7 +167,7 @@ const generateBdayInfo = (day, month, year) => {
     let dayInt;
     let fullDate;
 
-    // Format text according to result
+    // Format text according to result (preceding 0 if needed)
     monthInt < 10 ? monthInt = `0${monthInt}` : null;
     parseInt(day) < 10 ? dayInt = `0${day}` : dayInt = day;
 
