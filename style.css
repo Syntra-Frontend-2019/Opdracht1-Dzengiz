@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'love_font';
+    src:url('media/love_font.ttf');
+}
+
+* {
+    margin:0;
+    padding:0;
+    font-family: 'love_font', Fallback, sans-serif;
+}
+
+.container {
+    padding:5px;
+    display:flex;
+}
+
+.form {
+    background-color:lightgreen;
+    flex:1;
+    padding:10px;
+    align-items: flex-start;
+}
+
+.daters {
+    flex:2;
+    padding:10px;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.cols {
+    margin:5px;
+}
+
+.birthday {
+    display:flex;
+}
+
+.bdayElement {
+    flex:1
+}
+
+.formsection {
+    padding:10px;
+    margin-bottom:5px;
+}
+
+button {
+    padding:5px;
+}
+
+p {
+    margin-bottom:5px;
+}
+
+ul {
+    list-style: none;
+}
+
+.list {
+    display:flex;
+}
+.block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding:14px;
+    background:grey;
+    border-radius:10px;
+    margin: 5px;
+}
+img {
+    margin-right: 20px;
+}
+.male {
+    border: 3px solid aqua;
+    background-color: lightblue;
+}
+.female {
+    border: 3px solid magenta;
+    background-color: lightpink;
+}
+.transgender {
+    border: 3px solid grey;
+    background-color: lightgrey;
+}
+.grow {
+    transition: all .2s ease-in-out;
+}
+.grow:hover {
+    transform: scale(1.05);
+}

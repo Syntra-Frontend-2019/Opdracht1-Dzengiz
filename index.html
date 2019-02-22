@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Form -->
+        <section class="form cols">
+            <!-- Name input -->
+            <section class="name formsection">
+                Name <br>
+                <input type="text" name="name" id="name"/>
+            </section>
+
+            <!-- Birthday input -->
+            <section class="formsection">
+                Birthday <br>
+                <div class="birthday">
+                    <select name="bDaySelect" id="bDaySelect" class="bdayElement"></select>
+                    <select name="bMonthSelect" id="bMonthSelect" class="bdayElement"></select>
+                    <select name="bYearSelect" id="bYearSelect" class="bdayElement"></select>
+                </div>
+            </section>
+
+            <!-- Gender selection -->
+            <section class="gender formsection">
+                Gender <br>
+                <input type="radio" name="gender" value="male" checked> Male<br>
+                <input type="radio" name="gender" value="female"> Female<br>
+                <input type="radio" name="gender" value="transgender"> Transgender
+            </section>
+
+            <!-- Button -->
+            <section class="formsection">
+                <button id="addDater">Add the dater</button>
+            </section>
+        </section>
+
+        <!-- List of daters -->
+        <section class="list">
+            <ul id="datersList" class="daters"></ul>
+        </section>
+    </div>
+
+    <script src="functionality.js"></script>
+
+</body>
+</html>
