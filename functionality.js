@@ -55,6 +55,12 @@ const generateYears = () => {
     }
 };
 
+// Logic to handle the onChange of an input
+const checkForEmptyNameInput = () => {
+    // Check to see if any of the fields are empty
+    nameInput.value ? button.disabled = false : button.disabled = true;
+};
+
 // Logic to add a dater
 const addDater = () => {
     // Fetch the values from the HTML elements
@@ -117,8 +123,12 @@ const createPageFunctionality = () => {
     generateMonths();
     generateYears();
 
+    // Props
+    button.disabled = true;
+
     // Eventlistener(s)
-    button.addEventListener("click", addDater)
+    button.addEventListener("click", addDater);
+    nameInput.addEventListener("change", checkForEmptyNameInput)
 };
 
 
