@@ -3,12 +3,14 @@
 Maak een formulier met een invoerveld om een **naam** op te geven,
 invoer om een **geboortedatum** te kiezen, opgedeeld in 3 aparte select
 lists voor *dag*, *maand* en *jaar*, een **radio group** voor geslacht
-te kiezen en een knop om een persoon toe te voegen.
+te kiezen en een **knop** om een persoon toe te voegen.
 ### functionaliteit
 Bij een druk op de knop zou er een list item moeten verschijnen naast
 het form. Afhankelijk van het gekozen geslacht moet het list-item ofwel
 blauw, roze of grijs zijn bij een respectieve keuze van man, vrouw of
-transgender. 
+transgender. Dit listItem moet volgende items bevatten
+* **Naam**
+* **Geboortedatum** in de vorm dd/mm/yyyy
 ### Aandachtspunten
 HTML en JS moeten strikt van elkaar gescheiden zijn. Er mag dus geen
 HTML (tags e.d.) in de Javascript code aanwezig zijn. Ook mogen er geen
