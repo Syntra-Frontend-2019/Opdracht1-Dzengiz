@@ -15,7 +15,7 @@ HTML (tags e.d.) in de Javascript code aanwezig zijn. Ook mogen er geen
 Javascript-calls in de HTML tags te vinden zijn zoals 
 
 ```html
-<button onclick=foo(bar)> Klik mij </button>
+<button onclick="foo(bar)"> Klik mij </button>
 ```
 
 # Beschrijving oplossing
